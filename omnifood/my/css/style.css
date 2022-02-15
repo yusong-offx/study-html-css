@@ -1,0 +1,520 @@
+/**/
+/* HEADER */
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+}
+
+.header-logo {
+  width: 17rem;
+}
+
+.header-nav a {
+  display: inline-block;
+  color: rgb(56, 56, 56);
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 2.5rem;
+  transform: translate(0, 10%);
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.header-nav a:last-child {
+  background-color: rgb(255, 123, 0);
+  color: white;
+}
+
+/**/
+/* ARTICLE MAIN */
+.article-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem 0;
+}
+
+.article-main .left {
+  align-items: center;
+}
+.article-main .left .text h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  letter-spacing: -0.05rem;
+  margin-bottom: 3rem;
+}
+.article-main .left .text h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+.article-main img {
+  justify-self: right;
+  width: 90%;
+}
+.article-main .left .buttom {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.article-main .left a:first-child {
+  background-color: rgb(255, 123, 0);
+  color: white;
+}
+.article-main .left a:first-child:hover {
+  background-color: rgb(218, 105, 0);
+}
+.article-main .left a:last-child {
+  background-color: white;
+
+  color: #555;
+}
+.article-main .left a:last-child:hover {
+  border-color: black;
+  background-color: rgba(250, 235, 215, 0.575);
+  box-shadow: 0 0 0 3px #fff;
+}
+.customers {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 2rem;
+}
+.customers img {
+  padding: 0;
+  width: 5rem;
+  margin-left: -1.6rem;
+  border: 0.3rem solid rgba(250, 235, 215, 0.575);
+  border-radius: 50%;
+}
+.customers span {
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.customers span strong {
+  color: rgb(218, 105, 0);
+}
+
+/**/
+/* ARTICLE SPONSORS */
+.article-sponsors {
+  background-color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.article-sponsors h2 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+.sponsor-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  /* gap: 2rem; */
+}
+.sponsor-images img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/**/
+/* ARTICLE APP */
+.article-app {
+  background-color: white;
+}
+.article-app .contents {
+  padding-top: 7rem;
+  padding-left: 1rem;
+  padding-bottom: 20rem;
+}
+.article-app .contents .textbox h1 {
+  display: block;
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+  color: rgb(218, 105, 0);
+  text-transform: uppercase;
+}
+
+.article-app .contents .textbox span {
+  display: block;
+  color: rgb(53, 53, 53);
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+  padding-bottom: 10rem;
+}
+
+.article-app .contents .appbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 40rem);
+  gap: 3rem;
+  padding: 0 2rem;
+}
+
+.app-text {
+  align-self: center;
+}
+
+.app-text h1 {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 8rem;
+  filter: brightness(0);
+  opacity: 15%;
+}
+.app-text h2 {
+  font-size: 3.2rem;
+  color: rgb(77, 77, 77);
+  margin-bottom: 2rem;
+}
+.app-text span {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.app-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-image::before,
+.app-image::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app-image::before {
+  width: 60%;
+  /* height: 60%; */
+
+  /* 60% of parent's width */
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+}
+
+.app-image::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+}
+
+.app-image img {
+  height: 100%;
+  z-index: 1;
+}
+
+/**/
+/* ARTICLE APP */
+.article-recipes {
+  background-color: white;
+  padding: 0 4rem;
+}
+
+.article-recipes .textbox {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.article-recipes .textbox span:first-child {
+  display: block;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: rgb(218, 105, 0);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.article-recipes .textbox span:last-child {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.mealbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 50rem; */
+  padding: 0 3rem;
+  gap: 6rem;
+}
+.mealbox .mealbox-unit {
+  border-radius: 1rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  transition: all 0.4s;
+  overflow: hidden;
+}
+.mealbox .mealbox-unit:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.13);
+}
+.mealbox-image {
+  width: 100%;
+}
+.mealbox-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4rem 5rem;
+}
+.mealbox-textbox span {
+  display: inline-block;
+}
+.mealbox-textbox .top span:nth-child(1) {
+  font-size: 1.3rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: rgba(0, 128, 0, 0.459);
+  margin-bottom: 0.7rem;
+}
+.mealbox-textbox .top span:nth-child(2) {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.mealbox-textbox .bot {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.mealbox-textbox .bot .line {
+  padding: 0;
+}
+.mealbox-textbox .bot .line span {
+  font-size: 2rem;
+}
+.mealbox-textbox .bot .line svg {
+  stroke: orange;
+  width: 2.4rem;
+}
+.article-recipes .mealbox-lastunit {
+  display: flex;
+  padding: 0 3rem;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.article-recipes .mealbox-lastunit span:first-child {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+.line span {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+.check-icon {
+  stroke: orange;
+  width: 3rem;
+}
+.recipes-link {
+  width: 100%;
+  text-align: center;
+  margin-top: 8rem;
+  padding-bottom: 7rem;
+}
+.see-all:link,
+.see-all:visited {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  color: orange;
+  font-size: 2.4rem;
+  transition: all 0.3s;
+}
+
+.see-all:hover,
+.see-all:active {
+  border-bottom: 1px solid transparent;
+  color: rgb(255, 94, 0);
+}
+.article-recipes-container {
+  padding: 0 10rem;
+}
+
+/**/
+/* ARTICLE  RECOMMANDATION */
+.article-recommandation-container {
+  display: flex;
+  padding: 10rem 0;
+  justify-content: flex-end;
+  /* gap: 5rem; */
+}
+.article-recommandation-container .left {
+  flex: 1;
+  padding-left: 12rem;
+}
+.article-recommandation-container .left .textbox span {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  color: rgb(255, 94, 0);
+}
+.article-recommandation-container .left .textbox h1 {
+  font-size: 5rem;
+  display: inline-block;
+  margin-bottom: 10rem;
+}
+.article-recommandation-container .left .commentbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+}
+.article-recommandation-container .left .commentbox img {
+  width: 6rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.article-recommandation-container .left .commentbox .comments span {
+  display: block;
+  font-size: 2rem;
+  line-height: 1.5;
+  filter: brightness(150%);
+  margin-bottom: 2rem;
+}
+.article-recommandation-container .left .commentbox .comments span:last-child {
+  font-size: 1.6rem;
+  filter: brightness(200%);
+}
+.article-recommandation-container .right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 4rem;
+}
+.article-recommandation-container .right .imagebox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.article-recommandation-container .right img {
+  width: 100%;
+  transition: all 0.4s;
+}
+.article-recommandation-container .right img:hover {
+  transform: scale(1.1);
+}
+
+/**/
+/* ARTICLE  SERVICE PRICE */
+.article-price {
+  background-color: white;
+}
+.article-price-container {
+  padding: 10rem 10rem;
+}
+.article-price-container .text span {
+  text-transform: uppercase;
+  color: rgb(218, 105, 0);
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.article-price-container .text h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.article-price-container .items {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  padding: 5rem;
+  padding-top: 7rem;
+}
+.article-price-container .items .item {
+  border: 0.1rem solid rgba(218, 105, 0, 0.226);
+  padding: 3rem 7rem;
+  border-radius: 1rem;
+}
+.article-price-container .items .item {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.article-price-container .items .item .up h1:nth-child(1) {
+  color: rgb(218, 105, 0);
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2.5rem;
+}
+.article-price-container .items .item .up h1:nth-child(2):first-letter {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.article-price-container .items .item .up h1:nth-child(2) {
+  font-size: 7rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+.article-price-container .items .item .up h1:nth-child(3) {
+  font-size: 1.6rem;
+  filter: brightness(200%);
+  margin-bottom: 5rem;
+}
+
+.article-price-container .items .item span {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+.article-price-container .items .item span:nth-child(4) {
+  margin-bottom: 5rem;
+}
+.article-price-container .items .item a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 1.6rem 3rem;
+  font-size: 2.4rem;
+  border-radius: 1rem;
+  background-color: rgb(218, 105, 0);
+  transition: all 0.4s;
+}
+.article-price-container .items .item a:hover {
+  background-color: rgb(218, 44, 0);
+}
+.article-price-container .items .right {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+.article-price-container .items .right::after {
+  content: "Best value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
